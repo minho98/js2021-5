@@ -8,8 +8,8 @@
 
 배운내용<br>
 *consol.log와 alert의 차이점<br>
-alert("hello world...!");  >> 팝업창으로 헬로우월드 라고 나옴<br>
-console.log("hello world...!");  >> 콘솔창 (f12)에 헬로우 월드 라고 나옴<br>
+alert("hello world...!");  >> 팝업창으로 "hello world" 라고 나옴<br>
+console.log("hello world...!");  >> 콘솔창 (f12)에 "hello world" 라고 나옴<br>
 
 <table>
 </tabla>
