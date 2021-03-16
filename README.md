@@ -10,6 +10,11 @@
 *consol.log와 alert의 차이점<br>
 alert("hello world...!");  >> 팝업창으로 "hello world" 라고 나옴<br>
 console.log("hello world...!");  >> 콘솔창 (f12)에 "hello world" 라고 나옴<br>
+
+
+
+
+전문가 용어
 三 햄버거 메뉴 / ... 케밥 메뉴 <br>
 
 <table>
