@@ -8,16 +8,16 @@
 
 let output = "";
 
-for(let i =0; i<10; i++){
-    for(let j=0; j<10-i;j++){
+for(let i =0; i<10; i++){ <br>
+    for(let j=0; j<10-i;j++){ <br>
         output += " ";
     }
 
-    for(let j =0; j<i+1; j++) {  
+    for(let j =0; j<i+1; j++) {  <br>
         output += " * "; 
 }
 
-for(let j=1; j<i+1;j++){
+for(let j=1; j<i+1;j++){ <br>
     output += " * ";
 }
     output += "\n";
