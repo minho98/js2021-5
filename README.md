@@ -12,10 +12,10 @@ for(let i =0; i<10; i++){<br>
         output += " ";
     }<br>
     for(let j =0; j<i+1; j++) {  
-        output += "*"; 
+        output += " * "; 
 }<br>
 for(let j=1; j<i+1;j++){<br>
-    output += "*";<br>
+    output += " * ";<br>
 }
     output += "\n";<br>
 }
