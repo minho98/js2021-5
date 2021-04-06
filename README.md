@@ -20,8 +20,10 @@ for(let i =0; i<10; i++){ <br>
 for(let j=1; j<i+1;j++){ <br>
     output += " * ";
 }
+
     output += "\n";
 }
+
 console.log(output);
 
 ## [03월 30일]
