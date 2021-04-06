@@ -5,21 +5,21 @@
 * for in / for of 의 차이점은 for in은 인덱스(문자)값+값까지 출력을 하고 for of는 값만 표시해준다
 * \n 을사용하면 한줄을 띄어줌 한줄 빈칸처리
 * *로 삼각형 찍는법
-let output = "";
+let output = "";<br>
 
-for(let i =0; i<10; i++){
-    for(let j=0; j<10-i;j++){
-        output += " ";
-    }
-    for(let j =0; j<i+1; j++){
-        output += "*"; 
-}
-for(let j=1; j<i+1;j++){
-    output += "*";
-}
-    output += "\n";
-}
-console.log(output);
+for(let i =0; i<10; i++){<br>
+    for(let j=0; j<10-i;j++){<br>
+        output += " ";<br>
+    }<br>
+    for(let j =0; j<i+1; j++){  <br>
+        output += "*"; <br>
+}<br>
+for(let j=1; j<i+1;j++){<br>
+    output += "*";<br>
+}<br>
+    output += "\n";<br>
+}<br>
+console.log(output);<br>
 
 ## [03월 30일]
 * 조건문이 특정범위를 표현할때는 if 특정값은 표현할때는 swich 를 사용한다<br>
