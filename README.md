@@ -8,17 +8,17 @@
 let output = "";<br>
 
 for(let i =0; i<10; i++){<br>
-    for(let j=0; j<10-i;j++){<br>
-        output += " ";<br>
+    for(let j=0; j<10-i;j++){
+        output += " ";
     }<br>
-    for(let j =0; j<i+1; j++){  <br>
-        output += "*"; <br>
+    for(let j =0; j<i+1; j++) {  
+        output += "*"; 
 }<br>
 for(let j=1; j<i+1;j++){<br>
     output += "*";<br>
-}<br>
+}
     output += "\n";<br>
-}<br>
+}
 console.log(output);<br>
 
 ## [03월 30일]
