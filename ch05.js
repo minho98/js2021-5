@@ -54,10 +54,73 @@
 // print("사과",10);
 // print("사과");
 //
-function print(name="민호", count=1){
+// function print(name="민호", count=1){
 
-    console.log(`${name}이 ${count}개 있습니다.`);
-}
-print("사과",10);
-print("사과");
-print();
+//     console.log(`${name}이 ${count}개 있습니다.`);
+// }
+// print("사과",10);
+// print("사과");
+// print();
+//
+// function tenTimes(foo){
+//     for(let i =0; i <10;i++){
+//         foo();
+//     }
+// }
+
+// tenTimes(function(){
+//     console.log("함수 호출");
+// });
+
+//
+// let inputA = '52';
+// let inputB = '52.273';
+// let inputC = '1403동';
+
+// console.log(parseInt(inputA));
+// console.log(parseFloat(inputA));
+// console.log(parseInt(inputB));
+// console.log(parseFloat(inputB));
+// console.log(parseInt(inputC));
+// console.log(parseFloat(inputC));
+
+// console.log(Number(inputA));
+// console.log(Number(inputB));
+// console.log(Number(inputC));
+
+//
+// setTimeout(()=> {
+//     console.log("1초 경과!!!");
+// }, 1000)
+
+// setInterval(()=> {
+//     console.log("인터벌1초 경과!!!");
+// }, 1000)
+
+// let foo= setInterval(()=>{
+//     console.log("인터벌 1초 경과!!!");
+// }, 1000)
+
+// setTimeout(()=>{
+//     clearInterval(foo);
+// },6000)
+
+// let foo;
+// foo=10;
+// foo=20;
+// console.log(foo);
+
+// let foo;
+// foo=() => { console.log("1st");}
+// foo=() => { console.log("2nd");}
+// foo();
+
+let name = "dong"
+foo = () => {
+    let name = "synn";
+    console.log(this.name);
+};
+function () {
+    console.log("this.name");
+};
+foo();

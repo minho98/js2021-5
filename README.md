@@ -1,5 +1,25 @@
 # 김민호 [201740204]
 
+## [4월27일]
+
+* 배열은 뒤에있는것 기준으로 출력
+let foo;
+ foo=10;
+ foo=20;
+ console.log(foo);
+
+ let foo;
+ foo=() => { console.log("1st");}
+ foo=() => { console.log("2nd");}
+ foo();
+ * 1초마다 메세지 출력하기
+  let foo= setInterval(()=>{<br>
+     console.log("인터벌 1초 경과!!!");<br>
+ }, 1000)<br>
+
+ setTimeout(()=>{<br>
+     clearInterval(foo);<br>
+ },6000)<br>
 ## [4월 13일]
 *가장 편한매개변수 초기화 방법 직접적으로 값을 주면된다
 function print(name="민호", count=1){<br>
