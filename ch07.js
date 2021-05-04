@@ -1,1 +1,1 @@
-new Date().getVarDate
+new Date().getFullYear
