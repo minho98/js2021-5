@@ -2,12 +2,14 @@
 
 ## [5월4일]
 * toFixed이용해서 소수점자리 까지 출력하기 : toFixed() 안에 숫자 값에 따라서 소수점몇번째 까지 출력할껀지가 정해진다.<br>
+
 let foo = 25.123;<br>
 
 console.log(foo.toFixed(1));  값 : 25.1<br>
 console.log(foo.toFixed(5));  값 : 25.12300<br>
 
 * indexOf 이용하여 출력하기 :indexOf() 안에 값에 따라 조건문을 사용하여 조건을 충족 불충족 할경우 닶을 얻을수있다.<br>
+
 let foo = "좋은 아침입니다."<br>
 
 if(foo.indexOf('아침') >= 0){<br>
@@ -18,6 +20,7 @@ else {<br>
 }<br>
 
 * strig 객체들마다 출력하기 : strig 객체들은 원본 데이터를 건들지않는다<br>
+
 let foo = "abcdefg";<br>
 let bar = foo.toUpperCase();<br>
 let foobar = bar.toLowerCase();<br>
