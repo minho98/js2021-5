@@ -1,12 +1,12 @@
 # 김민호 [201740204]
 
 ## [5월4일]
-let foo = "abcdefg";
-let bar = foo.toUpperCase();
-let foobar = bar.toLowerCase();
-console.log(foo);
-console.log(bar);
-console.log(foobar);
+let foo = "abcdefg";<br>
+let bar = foo.toUpperCase();<br>
+let foobar = bar.toLowerCase();<br>
+console.log(foo);<br>
+console.log(bar);<br>
+console.log(foobar);<br>
 
 foo : 소문자로  출력이된다
 bar : 대문자로  출력이된다
@@ -17,15 +17,15 @@ foobar : 다시 소문자로 출력이 된다
 ## [4월27일]
 
 * 배열은 뒤에있는것 기준으로 출력
-let foo;
- foo=10;
- foo=20;
- console.log(foo);
+let foo;<br>
+ foo=10;<br>
+ foo=20;<br>
+ console.log(foo);<br>
 
- let foo;
- foo=() => { console.log("1st");}
- foo=() => { console.log("2nd");}
- foo();
+ let foo;<br>
+ foo=() => { console.log("1st");}<br>
+ foo=() => { console.log("2nd");}<br>
+ foo();<br>
  * 1초마다 메세지 출력하기
   let foo= setInterval(()=>{<br>
      console.log("인터벌 1초 경과!!!");<br>
