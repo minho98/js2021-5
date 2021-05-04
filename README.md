@@ -33,7 +33,17 @@ foo값 : 소문자로  출력이된다<br>
 bar값 : 대문자로  출력이된다<br>
 foobar값 : 다시 소문자로 출력이 된다<br>
 
+* Product를 이용해서 물건의 이름과 가격 출력하기<br>
+function Product(name,price) {<br>
+    this.name = name;<br>
+    this.price = price;<br>
+}
 
+let product = new Product("바나나", 1200);<br>
+
+console.log(product);<br>
+
+값 : Product { name: '바나나', price: 1200 }<br>
 
 ## [4월27일]
 
