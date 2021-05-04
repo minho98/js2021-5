@@ -6,7 +6,8 @@
 {  
     let foo = 25.123;<br>
     console.log(foo.toFixed(1));  값 : 25.1<br>
-    console.log(foo.toFixed(5));  값 : 25.12300<br>}
+    console.log(foo.toFixed(5));  값 : 25.12300<br>
+}
 * indexOf 이용하여 출력하기 :indexOf() 안에 값에 따라 조건문을 사용하여 조건을 충족 불충족 할경우 닶을 얻을수있다.<br>
 
 let foo = "좋은 아침입니다."<br>
