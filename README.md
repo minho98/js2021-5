@@ -1,10 +1,19 @@
 # 김민호 [201740204]
 
-<<<<<<< HEAD
 ## [5월4일]
+let foo = "abcdefg";
+let bar = foo.toUpperCase();
+let foobar = bar.toLowerCase();
+console.log(foo);
+console.log(bar);
+console.log(foobar);
 
-=======
->>>>>>> ae6d3bfabca22b5219700822cb9f790facf52211
+foo : 소문자로  출력이된다
+bar : 대문자로  출력이된다
+foobar : 다시 소문자로 출력이 된다
+
+@ strig 객체들은 원본 데이터를 건들지않는다
+
 ## [4월27일]
 
 * 배열은 뒤에있는것 기준으로 출력
