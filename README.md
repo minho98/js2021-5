@@ -1,5 +1,36 @@
 # 김민호 [201740204]
 
+## [5월4일]
+
+## [4월27일]
+
+* 배열은 뒤에있는것 기준으로 출력
+let foo;
+ foo=10;
+ foo=20;
+ console.log(foo);
+
+ let foo;
+ foo=() => { console.log("1st");}
+ foo=() => { console.log("2nd");}
+ foo();
+ * 1초마다 메세지 출력하기
+  let foo= setInterval(()=>{<br>
+     console.log("인터벌 1초 경과!!!");<br>
+ }, 1000)<br>
+
+ setTimeout(()=>{<br>
+     clearInterval(foo);<br>
+ },6000)<br>
+## [4월 13일]
+*가장 편한매개변수 초기화 방법 직접적으로 값을 주면된다
+function print(name="민호", count=1){<br>
+
+    console.log(`${name}이 ${count}개 있습니다.`);  <br>
+}
+print("사과",10); <br>
+print("사과"); <br>
+print(); <br>
 ## [04월 6일]
 * 배열에서 문자열과 변수를 같이 출력하고 싶을때는 ``을 사용한다
 * for in / for of 의 차이점은 for in은 인덱스(문자)값+값까지 출력을 하고 for of는 값만 표시해준다

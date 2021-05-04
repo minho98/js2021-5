@@ -1,18 +1,18 @@
-let output = "";
+// let output = "";
 
-for(let i =0; i<10; i++){
-    for(let j=0; j<10-i;j++){
-        output += " ";
-    }
-    for(let j =0; j<i+1; j++){
-        output += "*"; 
-}
-for(let j=1; j<i+1;j++){
-    output += "*";
-}
-    output += "\n";
-}
-console.log(output);
+// for(let i =0; i<10; i++){
+//     for(let j=0; j<10-i;j++){
+//         output += " ";
+//     }
+//     for(let j =0; j<i+1; j++){
+//         output += "*"; 
+// }
+// for(let j=1; j<i+1;j++){
+//     output += "*";
+// }
+//     output += "\n";
+// }
+// console.log(output);
 // -----------------------------------------
 // let output = "";
 
@@ -49,12 +49,12 @@ console.log(output);
 // console.log(bar);
 
 // --------------------------------------------
-// for (let i=1; i<10; i++){
-//     if(i%2 == 0){
-//         continue;
-//     }
-//     console.log(i);
-// }
+for (let i=1; i<10; i++){
+    if(i%2 == 0){
+        continue;
+    }
+    console.log(i);
+}
 // ------------------------------------
 
 // {
