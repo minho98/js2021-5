@@ -12,7 +12,7 @@ let bar =foo.map((item, index)=>{<br>
 })<br>
 console.log(bar);<br>
 foreach를 사용하면 인덱스 값과 배열순서가 같이 출력이 되고 map을 사용하면 배열안에 있는 값만 출력이 된다.<br>
-* pop () 과 push() 를 사용해서 배열에 추가 또느 추출하기<br>
+* pop () 과 push() 를 사용해서 배열에 추가 또는 추출하기<br>
  let foo = [<br>
     {  <br>
         name : '고구미',<br>
