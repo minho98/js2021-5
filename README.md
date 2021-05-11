@@ -1,5 +1,37 @@
 # 김민호 [201740204]
 
+## [5월 11일]
+* index값이 필요하면 foreach()문을 사용하고 필요없으면 map()을 사용하면 된다 <br>
+let foo = [55, 65, 75, 400, 550];<br>
+
+foo.forEach((item,index) => {<br>
+    console.log(`${index} - ${item}`);<br>
+})<br>
+let bar =foo.map((item, index)=>{<br>
+    return item +10;<br>
+})<br>
+console.log(bar);<br>
+foreach를 사용하면 인덱스 값과 배열순서가 같이 출력이 되고 map을 사용하면 배열안에 있는 값만 출력이 된다.<br>
+* pop () 과 push() 를 사용해서 배열에 추가 또느 추출하기<br>
+ let foo = [<br>
+    {  <br>
+        name : '고구미',<br>
+        price : 1000<br>
+    },<br>
+    {  <br>
+        name : '감자',<br>
+        price : 500<br>
+    },<br>
+    {  <br>
+        name : '바나나',<br>
+        price : 1500<br>
+    },<br>
+];<br>
+let popped = foo.pop();<br>
+console.log(popped);<br>
+console.log(foo);<br>
+foo에 고구마 감자 바나나를 주었고 먼저 마지막값인 바나나를 출력하면 foo에는 바나나값이 빠진 감자와 고구마 값만 남게된다<br>
+-------------------------------------------------------------------------------------------
 ## [5월4일]
 * toFixed이용해서 소수점자리 까지 출력하기 : toFixed() 안에 숫자 값에 따라서 소수점몇번째 까지 출력할껀지가 정해진다.<br>
 

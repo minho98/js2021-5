@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/underscore-umd-min.js"></script>
     <script>
-        let input = prompt("입력해 주세요> ");
-        console.log(input);
+        let foo = [
+    {  
+        "name" : "고구미",
+        "price" : 1000
+    },
+    {  
+        "name" : "감자",
+        "price" : 500
+    },
+    {  
+        "name" : "바나나",
+        "price" : 1500
+    },];
+    const bar =_.sortBy(foo,(item) =>item.price);
+    console.log(bar);
+    // const foobar =_(foo).sortBy(,(item) =>item.price);
+    // console.log(foobar);
     </script>
-    
 </head>
 <body>
     
