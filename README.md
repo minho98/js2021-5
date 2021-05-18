@@ -2,33 +2,51 @@
 
 ## [5월 18일]
 
-* 전역변수
-    __filename : 현재실행 중인코드의 파일 경로
-    __dirname : 현재 실행중인 코드의 폴더경로
+* 전역변수<br>
+    __filename : 현재실행 중인코드의 파일 경로<br>
+    __dirname : 현재 실행중인 코드의 폴더경로<br>
 
-* process 객체의 속성
-    env : 컴퓨터의 환경 정보를 나타낸다
-    version : node.js 버전을 나타낸다
-    versions : node.js와 종속된 프로그램 버전을 나타낸다
-    arch : 프로세서의 아키텍처를 나타낸다
-    platform : 플랫폼을 나타낸다
+* process 객체의 속성<br>
+    env : 컴퓨터의 환경 정보를 나타낸다<br>
+    version : node.js 버전을 나타낸다<br>
+    versions : node.js와 종속된 프로그램 버전을 나타낸다<br>
+    arch : 프로세서의 아키텍처를 나타낸다<br>
+    platform : 플랫폼을 나타낸다<br>
 
-* os 객체생성
-    const foo = require("os");
+* os 객체생성<br>
+    const foo = require("os");<br>
 
-* url 모듈 추출
-    cost url = require('url);
+* url 모듈 추출<br>
+    cost url = require('url);<br>
 
-* fs 모듈 추출
-    const fs = require("fs");
+* fs 모듈 추출<br>
+    const fs = require("fs");<br>
 
-* 비동기적으로 파일 읽어 들이기
-    const fs = require("fs");
+* 비동기적으로 파일 읽어 들이기<br>
+    const fs = require("fs");<br>
 
-    fs.readFile('textfile.txt', (error, file) => {
-        console.log(file);
-        console.log(file.toString());
-    });
+    fs.readFile('textfile.txt', (error, file) => {<br>
+        console.log(file);<br>
+        console.log(file.toString());<br>
+    });<br>
+
+* naver body태그 읽어오기<br>
+    const request = require("request");<br>
+
+    request("https://naver.com", (error,response, body)=>{<br>
+        console.log(body);<br>
+    });<br>
+* naver 홈페이지에서 stron태그값 추출해오기<br>
+    const request = require("request");<br>
+    const cheerio = require("cheerio");<br>
+
+    const url = "https://naver.com";<br>
+
+    request(url, (error, response, body) =>{<br>
+        const $ = cheerio.load(body);<br>
+        console.log($("strong.new").text());<br>
+    });<br>
+-------------------------------------------------------------------------------  
 ## [5월 11일]
 
 * sort(), pop(), push() 등 array 객체의 메소드들은 저장된 값의 변화를 줄수있는 메소드들이다.
@@ -154,7 +172,7 @@ for(let i =0; i<10; i++){ <br>
         output += " * "; 
 }
 
-for(let j=1; j<i+1;j++){ <br>
+for(let j=1; j<i+1;j++){  <br>
     output += " * ";
 }
 
