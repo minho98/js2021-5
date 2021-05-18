@@ -1,5 +1,34 @@
 # 김민호 [201740204]
 
+## [5월 18일]
+
+* 전역변수
+    __filename : 현재실행 중인코드의 파일 경로
+    __dirname : 현재 실행중인 코드의 폴더경로
+
+* process 객체의 속성
+    env : 컴퓨터의 환경 정보를 나타낸다
+    version : node.js 버전을 나타낸다
+    versions : node.js와 종속된 프로그램 버전을 나타낸다
+    arch : 프로세서의 아키텍처를 나타낸다
+    platform : 플랫폼을 나타낸다
+
+* os 객체생성
+    const foo = require("os");
+
+* url 모듈 추출
+    cost url = require('url);
+
+* fs 모듈 추출
+    const fs = require("fs");
+
+* 비동기적으로 파일 읽어 들이기
+    const fs = require("fs");
+
+    fs.readFile('textfile.txt', (error, file) => {
+        console.log(file);
+        console.log(file.toString());
+    });
 ## [5월 11일]
 
 * sort(), pop(), push() 등 array 객체의 메소드들은 저장된 값의 변화를 줄수있는 메소드들이다.
