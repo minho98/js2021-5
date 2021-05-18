@@ -36,7 +36,7 @@
     request("https://naver.com", (error,response, body)=>{<br>
         console.log(body);<br>
     });<br>
-* naver 홈페이지에서 stron태그값 추출해오기<br>
+* naver 홈페이지에서 strong태그값 추출해오기<br>
     const request = require("request");<br>
     const cheerio = require("cheerio");<br>
 
