@@ -1,5 +1,50 @@
 # 김민호 [201740204]
 
+## [5월 25일]
+* 10강 express 모듈<br>
+    - 기본 메소드 종류<br>
+    express() - 서버 애플리케이션 객체 생성<br>
+    app.ues() - 요청이 왔을때 실행할 함수를 지정<br>
+    app.listen() - 서버를 실행<br>
+
+    - express 모듈로 서버 생성과 실행하기<br>
+    설치 코드 : npm install express<br>
+//모듈 추출<br>
+    const express = require('express');<br>
+//서버 생성<br>
+        const app = express();<br>
+//request 이벤트 리스너 설정<br>
+        app.use((request, response) => {<br>
+        response.send('<h1>Hello express</h1>');<br>
+    })<br>
+//서버를 실행<br>
+        app.listen(52273,() =>{<br>
+        console.log('Server running at http://127.0.0.1:52273');<br>
+    })<br>
+* 페이지 라우팅<br>
+    - 기본 메소드 종류<br>
+    get(path, callback) - get 요청이 발생했을때 이벤트 리스너 지정<br>
+    post(path, callback) - post 요청이 발생했을때 이벤트 리스너 지정<br>
+    put(path, callback) - put 요청이 발생했을때 이벤트 리스너 지정<br>
+    delete(path, callback) - delete 요청이 발생했을때 이벤트 리스너 지정<br>
+    all(path, callback) - 모든요청이 발생했을때 이벤트 리스터 지정<br>
+    - 페이지 라우팅<br>
+//모듈 추출<br>
+    const express = require('express');<br>
+//서버 생성<br>
+    const app = express();<br>
+//request 이벤트 리스너 생성<br>
+    app.get('/page/:id',(request, response) => {<br>
+//토큰을 꺼낸다<br>
+        const id = request.params.id;<br>
+//응답<br>
+        response.send(`<h1>${id}Page</h1>`);<br>
+    });<br>
+//서버를 실행<br>
+    app.listen(52273,() =>{<br>
+        console.log('Server running at http://127.0.0.1:52273');<br>
+    });<br>
+
 ## [5월 18일]
 
 * 전역변수<br>
