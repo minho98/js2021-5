@@ -1,5 +1,45 @@
 # 김민호 [201740204]
 
+## [6월 1일]
+* jquery 문 사용하기<br>
+    1. 먼저 터미널에 npm install jquery 문 작성<br>
+    2. <script src="node_modules/jquery/dist/jquery.min.js"></script> 태그 사용해서 작성하기 <br>
+
+<head><br>
+    <meta charset="UTF-8"><br>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><br>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+    <title>Document</title><br>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script><br>
+    <script><br>
+        $(document).ready(function(){<br>
+            var $headers = $('h1');<br>
+            for(var i = 0; i<$headers.length;i++){<br>
+                if(i%2==1){ <br>
+                    var domElement = $headers.get(i);<br>
+                    $(domElement).css('backgroundColor','red');<br>
+                }<br>
+            }<br>
+        });<br>
+    </script><br>
+    ----------------------------------------------------------------
+      <script><br>
+        $(document).ready(function(){<br>
+            $('h1').each(function(index, element){<br>
+                if(index % 2 ==1){<br>
+                    $(this).css('backgroundColor','blue')<br>
+                }<br>
+            });<br>
+                });<br>
+    </script><br>
+    ----------------------------------------------------------------
+    <script><br>
+        $(document).ready(function(){<br>
+        alert($('p').text());<br>
+        alert($('p').html());<br>
+        });<br>
+    </script><br>
+
 ## [5월 25일]
 * 10강 express 모듈<br>
     - 기본 메소드 종류<br>
